@@ -20,7 +20,7 @@
     
     </div>
     <div class="col-sm">
-    <h3 >Jumlah Persediaan</h3>
+    <h3 >Laba Rugi Per Produk</h3>
     </div>
     <div class="col-sm">
       

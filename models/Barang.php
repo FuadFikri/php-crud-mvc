@@ -12,9 +12,6 @@ class Barang {
         $this->conn = $db;
     }
 
-    public function cek_jumlah_barang() { 
-        echo''. $this->id_barang .'';
-    }
 
     
     public function getbarangs() {
