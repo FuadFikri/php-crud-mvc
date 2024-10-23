@@ -16,9 +16,9 @@ Membuat CRUD
 4. Membuat View
    1. Buat folder di dalam folder view
    2. Buat 3 file yaitu
-      create.php : untuk halaman create data
-      edit.php   : untuk halaman edit data
-      index.php  : untuk halaman  utama / list data
+      - create.php : untuk halaman create data
+      - edit.php   : untuk halaman edit data
+      - index.php  : untuk halaman  utama / list data
    3. pastikan setiap halaman view tersebut memiliki
     ```
       <?php include 'views/layout/header.php'; ?> 
