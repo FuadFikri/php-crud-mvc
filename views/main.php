@@ -3,9 +3,12 @@
 
 <!-- Main Content Area -->
 <main class="col-md-10 ms-sm-auto col-lg-10 px-md-4 main-content">
-    <h2>Selamat Datang</h2>
-    <p>Tugas Kelompok ke-4 Introduction to Data and Information Management </p>
+<div class="jumbotron">
+  <h1 class="display-4">Selamat Datang!</h1>
+  <p class="lead">Introduction to Data and Information Management</p>
+  <hr class="my-4">
     <p>Binus Online Learning</p>
+</div>
 
 </main>
 

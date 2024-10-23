@@ -260,3 +260,105 @@ COMMIT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
+INSERT INTO `tugas4`.`hakakses` (`id_akses`, `nama_akses`) VALUES ('1', 'admin');
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama_pengguna`, `password`, `nama_depan`, `nama_belakang`, `no_hp`, `alamat`, `id_akses`) 
+VALUES (1, 'andi_pratama', 'password123', 'Andi', 'Pratama', '081234567890', 'Jl. Merdeka No. 123, Jakarta', 1);
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama_pengguna`, `password`, `nama_depan`, `nama_belakang`, `no_hp`, `alamat`, `id_akses`) 
+VALUES (2, 'siti_rahmawati', 'passw0rd', 'Siti', 'Rahmawati', '085678901234', 'Jl. Kenanga No. 45, Bandung', 1);
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama_pengguna`, `password`, `nama_depan`, `nama_belakang`, `no_hp`, `alamat`, `id_akses`) 
+VALUES (3, 'budi_santoso', 'budi2024', 'Budi', 'Santoso', '082345678901', 'Jl. Mangga No. 67, Surabaya', 1);
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama_pengguna`, `password`, `nama_depan`, `nama_belakang`, `no_hp`, `alamat`, `id_akses`) 
+VALUES (4, 'rina_oktaviani', 'rinaok123', 'Rina', 'Oktaviani', '083456789012', 'Jl. Melati No. 89, Yogyakarta', 1);
+
+INSERT INTO `pengguna` (`id_pengguna`, `nama_pengguna`, `password`, `nama_depan`, `nama_belakang`, `no_hp`, `alamat`, `id_akses`) 
+VALUES (5, 'doni_setiawan', 'doni12345', 'Doni', 'Setiawan', '081234567891', 'Jl. Anggrek No. 12, Medan', 1);
+
+
+
+
+INSERT INTO `supplier` (`id_supplier`, `nama_supplier`, `alamat_supplier`, `no_telp_supplier`, `email_supplier`, `keterangan`) 
+VALUES (1, 'PT Bina Sukses', 'Jl. Jendral Sudirman No. 88, Jakarta', '0213456789', 'contact@binasukses.com', 'Supplier alat tulis kantor');
+
+INSERT INTO `supplier` (`id_supplier`, `nama_supplier`, `alamat_supplier`, `no_telp_supplier`, `email_supplier`, `keterangan`) 
+VALUES (2, 'CV Sumber Makmur', 'Jl. Raya Bogor KM. 12, Bogor', '02517456789', 'info@sumbermakmur.co.id', 'Supplier peralatan industri');
+
+INSERT INTO `supplier` (`id_supplier`, `nama_supplier`, `alamat_supplier`, `no_telp_supplier`, `email_supplier`, `keterangan`) 
+VALUES (3, 'PT Sentosa Abadi', 'Jl. Pahlawan No. 45, Surabaya', '03112345678', 'sentosa.abadi@email.com', 'Supplier bahan bangunan');
+
+INSERT INTO `supplier` (`id_supplier`, `nama_supplier`, `alamat_supplier`, `no_telp_supplier`, `email_supplier`, `keterangan`) 
+VALUES (4, 'CV Karya Jaya', 'Jl. Gatot Subroto No. 10, Bandung', '02278901234', 'karyajaya@email.com', 'Supplier kebutuhan elektronik');
+
+INSERT INTO `supplier` (`id_supplier`, `nama_supplier`, `alamat_supplier`, `no_telp_supplier`, `email_supplier`, `keterangan`) 
+VALUES (5, 'PT Maju Terus', 'Jl. Anggrek No. 22, Yogyakarta', '02741234567', 'majuterus@company.co.id', 'Supplier produk makanan');
+
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `no_telp_pelanggan`, `email_pelanggan`, `keterangan`) 
+VALUES (1, 'Andi Pratama', 'Jl. Merdeka No. 123, Jakarta', '081234567890', 'andi.pratama@email.com', 'Pelanggan tetap sejak 2021');
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `no_telp_pelanggan`, `email_pelanggan`, `keterangan`) 
+VALUES (2, 'Siti Rahmawati', 'Jl. Kenanga No. 45, Bandung', '085678901234', 'siti.rahmawati@email.com', 'Sering membeli produk elektronik');
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `no_telp_pelanggan`, `email_pelanggan`, `keterangan`) 
+VALUES (3, 'Budi Santoso', 'Jl. Mangga No. 67, Surabaya', '082345678901', 'budi.santoso@email.com', 'Pelanggan baru, tertarik pada promo diskon');
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `no_telp_pelanggan`, `email_pelanggan`, `keterangan`) 
+VALUES (4, 'Rina Oktaviani', 'Jl. Melati No. 89, Yogyakarta', '083456789012', 'rina.oktaviani@email.com', 'Pernah mengikuti program loyalitas');
+
+INSERT INTO `pelanggan` (`id_pelanggan`, `nama_pelanggan`, `alamat_pelanggan`, `no_telp_pelanggan`, `email_pelanggan`, `keterangan`) 
+VALUES (5, 'Doni Setiawan', 'Jl. Anggrek No. 12, Medan', '081234567891', 'doni.setiawan@email.com', 'Memiliki preferensi produk pakaian');
+
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (1, 'Buku Tulis', 'Buku tulis 40 lembar', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (2, 'Pulpen', 'Pulpen tinta hitam', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (3, 'Penggaris', 'Penggaris 30 cm plastik', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (4, 'Penghapus', 'Penghapus karet putih', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (5, 'Pensil', 'Pensil 2B kayu', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (6, 'Spidol', 'Spidol papan tulis warna hitam', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (7, 'Stapler', 'Stapler ukuran kecil', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (8, 'Kertas HVS', 'Kertas HVS A4 70 gsm', 'Rim', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (9, 'Amplop', 'Amplop coklat besar', 'Pcs', null);
+
+INSERT INTO `barang` (`id_barang`, `nama_barang`, `keterangan`, `satuan`, `id_pengguna`) 
+VALUES (10, 'Binder Clip', 'Binder clip 25 mm', 'Pcs', null);
+
+
+
+INSERT INTO `pembelian` (`id_pembelian`, `jumlah_pembelian`, `harga_beli`, `id_pengguna`, `id_barang`, `id_supplier`) 
+VALUES (1, 100, 5000.00, 1, 1, 1);
+
+INSERT INTO `pembelian` (`id_pembelian`, `jumlah_pembelian`, `harga_beli`, `id_pengguna`, `id_barang`, `id_supplier`) 
+VALUES (2, 50, 2500.00, 2, 2, 2);
+
+INSERT INTO `pembelian` (`id_pembelian`, `jumlah_pembelian`, `harga_beli`, `id_pengguna`, `id_barang`, `id_supplier`) 
+VALUES (3, 200, 3000.00, 3, 3, 3);
+
+INSERT INTO `pembelian` (`id_pembelian`, `jumlah_pembelian`, `harga_beli`, `id_pengguna`, `id_barang`, `id_supplier`) 
+VALUES (4, 150, 1500.00, 4, 4, 4);
+
+INSERT INTO `pembelian` (`id_pembelian`, `jumlah_pembelian`, `harga_beli`, `id_pengguna`, `id_barang`, `id_supplier`) 
+VALUES (5, 75, 7500.00, 5, 5, 5);
+
+

@@ -16,21 +16,21 @@
 
     <div class="mb-3">
         <label for="nama_barang" class="form-label">Nama Barang</label>
-        <input type="text" class="form-control" id="nama_barang" name="nama_barang" required value=<?= $barang['nama_barang'] ?>>
+        <input type="text" class="form-control" id="nama_barang" name="nama_barang" required value="<?= $barang['nama_barang'] ?>">
         <div class="invalid-feedback">
             Please enter a name for the barang.
         </div>
     </div>
     <div class="mb-3">
         <label for="keterangan" class="form-label">Keterangan</label>
-        <input type="text" class="form-control" id="keterangan" name="keterangan" required value=<?= $barang['keterangan'] ?>>
+        <input type="text" class="form-control" id="keterangan" name="keterangan" required value="<?= $barang['keterangan'] ?>">
         <div class="invalid-feedback">
             Please provide a description.
         </div>
     </div>
     <div class="mb-3">
         <label for="satuan" class="form-label">Satuan</label>
-        <input type="text" class="form-control" id="satuan" name="satuan" required value=<?= $barang['satuan'] ?>>
+        <input type="text" class="form-control" id="satuan" name="satuan" required value="<?= $barang['satuan'] ?>">
         <div class="invalid-feedback">
             Please enter the unit.
         </div>

@@ -24,7 +24,6 @@ class BarangController {
       
         $this->barang->id_barang = $id;
         $barang = $this->barang->findById();
-      
         include_once 'views/barang/edit.php';
     }
 
