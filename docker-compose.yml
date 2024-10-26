@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    volumes:
+      - .:/var/www/html/
+    depends_on:
+      - db
+    networks:
+      - php-crud-network
+
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: tugas4
+      MYSQL_ROOT_PASSWORD: ''  # empty password for root user
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'  # allow empty password
+    volumes:
+      - ./database/create_table.sql:/docker-entrypoint-initdb.d/create_table.sql
+      - mysql_data:/var/lib/mysql
+    networks:
+      - php-crud-network
+
+networks:
+  php-crud-network:
+    driver: bridge
+
+volumes:
+  mysql_data:
