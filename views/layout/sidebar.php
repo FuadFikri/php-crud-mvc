@@ -20,6 +20,12 @@
             <a class="nav-link " href="index.php?controller=pelanggan&action=index">Pelanggan</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link" href="index.php?controller=pembelian&action=index">Pembelian</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="index.php?controller=penjualan&action=index">Penjualan</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link" href="index.php?controller=dashboard&action=index">Dashboard</a>
         </li>
     </ul>
