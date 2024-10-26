@@ -5,6 +5,12 @@
             <a class="nav-link " href="index.php?controller=main&action=index">Welcome</a>
         </li>
         <li class="nav-item">
+            <a class="nav-link " href="index.php?controller=hakakses&action=index">Hak Akses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link " href="index.php?controller=pengguna&action=index">Pengguna</a>
+        </li>
+        <li class="nav-item">
             <a class="nav-link " href="index.php?controller=barang&action=index">Barang</a>
         </li>
         <li class="nav-item">
